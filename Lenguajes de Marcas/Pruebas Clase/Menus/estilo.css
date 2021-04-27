@@ -1,0 +1,45 @@
+
+
+
+ ul{
+	width: 35%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul > li{
+	position: relative;
+	float: left;
+	width: 90px;
+	background: black;
+}
+ ul li a{
+	color: white;
+	padding: 1em 0;
+	text-decoration: none; /*nos elimina el subrayado de link*/
+	display: block;
+	
+	
+}
+
+ul li{
+	list-style-type: none;  /*Elimina la viñeta de la lista*/
+	text-align: center;
+	/*display: inline-block;*//*   nos pone el menu en linea*/
+ }
+ ul li a:hover{ /*cuando nos posicionamos con el raton*/
+	background: red;
+}
+
+ul li ul{
+	display: none;
+	position: absolute;
+	
+}
+
+ul li:hover ul {
+	display: block;
+}
+ul li ul li a:hover{
+	background: pink;
+}

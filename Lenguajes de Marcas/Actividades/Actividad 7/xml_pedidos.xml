@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="codigoActividad.xml" type="text/xsl"?>
+
+<tablas>
+
+	<Orden>
+
+		<dataset>
+			<Cliente>Arm</Cliente> 
+			<PC>pc400</PC>
+		</dataset>
+
+		<dataset>	
+			<Cliente>Meier</Cliente>			
+			<PC>pc500</PC>	
+		</dataset>
+		
+		<dataset>
+			<Cliente>Reich</Cliente>				
+			<PC>pc600</PC>
+		</dataset>
+
+		<dataset>
+			<Cliente>Cesar</Cliente>				
+			<PC>pc5145</PC>
+		</dataset>
+
+		<dataset>
+			<Cliente>Cesar</Cliente>				
+			<PC>PC Cuantico</PC>
+		</dataset>
+	
+	</Orden>
+
+	
+	<Devoluciones>
+		
+		<dataset>
+			<Proveedor>Vobis</Proveedor>
+			<Parte>pc400</Parte>
+			<Precio>1700</Precio>			
+			<Entrega>3</Entrega>		
+		</dataset>
+
+		<dataset>		
+			<Proveedor>Dell</Proveedor>			
+			<Parte>pc500</Parte>						
+			<Precio>2000</Precio>						
+			<Entrega>6</Entrega>
+		</dataset>
+		
+		<dataset>
+			<Proveedor>IBM</Proveedor>
+			<Parte>pc500</Parte>			
+			<Precio>2500</Precio>			
+			<Entrega>6</Entrega>
+		</dataset>
+		
+		<dataset>			
+			<Proveedor>Vobis</Proveedor>
+			<Parte>pc500</Parte>			
+			<Precio>2000</Precio>			
+			<Entrega>3</Entrega>
+		</dataset>
+	
+		<dataset>
+			<Proveedor>IBM</Proveedor>		
+			<Parte>pc600</Parte>
+			<Precio>3500</Precio>
+			<Entrega>4</Entrega>
+		</dataset>
+
+		<dataset>	
+			<Proveedor>Vobis</Proveedor>						
+			<Parte>pc600</Parte>						
+			<Precio>2500</Precio>						
+			<Entrega>3</Entrega>					
+		</dataset>
+
+	</Devoluciones>
+
+</tablas>

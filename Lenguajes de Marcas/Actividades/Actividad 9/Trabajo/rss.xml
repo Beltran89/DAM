@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+	
+		<title> Canal RSS </title>
+		<link> https://elpais.com </link>
+		<descripcion> Noticias </descripcion>
+		<language>es-es</language>
+
+		<item>
+				<title> Noticias En Madrid</title>
+				<link> https://elpais.com/ccaa/madrid.html</link>
+				<descripcion> Las noticias del municipio de Madrid </descripcion>
+		</item>
+
+
+
+		<item>
+				<title> Mundo del Motor </title>
+				<link> https://elpais.com/deportes </link>
+				<descripcion> La actualidad en el mundo del motor </descripcion>
+		</item>
+
+	</channel>
+
+</rss>

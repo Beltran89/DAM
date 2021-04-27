@@ -1,0 +1,48 @@
+@media only screen and (max-width:420px) {
+	#contenedor {
+		width:100%;
+	}
+	.header{
+		height: 140px;
+		width: 100%;
+	}
+	.header .logo{
+		height: 50px;
+		width: 50px;
+		margin: 5px 0px 0px -5px;
+	}
+
+	section.conAside {
+		width: 50%;
+		display: block;
+		clear: both;
+		overflow: hidden;
+	}
+	section.conAside header img{
+		width: 50%;
+	}
+	aside{
+		width: 100%;
+		display: block;
+		clear: both;
+		overflow: hidden;
+	
+	}
+	section.area {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	section.area article {
+		width: 100%;
+		padding:10px;
+		margin-bottom: 2px;
+		overflow: hidden;
+		min-height:auto;
+	}
+	 #imgArea{
+		height: 100%;
+	}
+}
+

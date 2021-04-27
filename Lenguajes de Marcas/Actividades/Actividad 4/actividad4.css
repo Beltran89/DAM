@@ -1,0 +1,198 @@
+#contenedor{
+
+	margin-left:auto;
+	margin-right:auto;
+	width:900px;
+	height: auto;
+	background-color:#EAEAEA;
+}
+
+#titulo{
+
+	width: 900px;
+	background-color: #CAC7C7;
+	font-size: 20px;
+	text-align: center;
+
+}
+#datos{
+
+	width: 875px;
+	background-color: #CAC7C7 ;
+	position: absolute;
+	padding-left: 25px;
+}
+	
+#titdatos{
+
+	border: 1px solid #CAC7C7;
+	background-color: white;
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	position: relative;
+	margin-top: -15px;
+}
+
+.Ap0{
+
+	width: 400px;	
+}
+
+.Ap1{
+
+	position: absolute;
+	margin-top: -35px;
+	margin-left: 415px;	
+}
+
+.Ap3 {
+
+	position: relative;
+	margin-top: -34px;
+	margin-left: 600px;
+	margin-bottom: -10px;
+}
+
+.Ap5 {
+
+	position: relative;
+	margin-top: -35px;
+	margin-left: 300px;
+	
+}
+
+
+.Prov {
+
+	margin-left: 125px;
+}
+.Ap4{
+	margin-left: 185px;
+	margin-bottom: 15px;
+}
+
+#Domici {
+
+	width: 500px;
+	margin-right: 90px;
+	margin-bottom: 15px;
+}
+
+#requisitos{
+
+	width: 875px;
+	background-color: #FCFFC0 ;
+	position: absolute;
+	padding-left: 25px;
+	margin-top:250px;
+}
+
+#titreq{
+
+	border: 1px solid #FCFFC0;
+	background-color: white;
+	width: 150px;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: -15px;
+	position: relative;
+}
+
+#solicitud{
+
+	width: 875px;
+	background-color:#33CADE;
+	position: absolute;
+	padding-left: 25px;
+	margin-top: 455px;
+}
+
+#titsoli{
+
+	border: 1px solid #33CADE;
+	background-color: white;
+	width: 150px;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: -15px;
+	position: relative;
+}
+#documentacion{
+
+	width: 875px;
+	background-color:#F894D8;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	margin-top: 720px;
+	position: absolute;
+}
+#titdoc{
+
+	border: 1px solid #F894D8;
+	background-color: white;
+	width: 250px;
+	height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: -15px;
+	position: relative;
+	
+}
+
+#comunicacion{
+
+	width: 875px;
+	background-color:#FCD899;
+	padding-left: 25px;
+	margin-top: 800px;
+	position: absolute;
+}
+#titcom{
+
+	border: 1px solid #FCD899;
+	background-color: white;
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	margin-top: -15px;
+	position: relative;
+}
+#Dia{
+
+	width: 30px;
+}
+#Mes{
+
+	width: 100px;
+}
+#Sello{
+
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	font-size: 10px;
+	background-color: white;
+	border: 1px solid;
+	position: relative;
+	margin-left: 700px;
+}
+#Info{
+
+	width: 892px;
+	height: 100px;
+	border: dotted;
+	position: relative;
+	margin-top: 1240px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	text-align: center;
+
+}
+#H1{
+	
+	text-align: center;
+	font-size: 25px;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <biblioteca>
+ 	<libros id="L001" tipo_clase="novela" num_pag="879">
+ 		<titulo>Fuego y Sangre</titulo>
+ 		<capitulo num_pag="28">
+ 			<titulo>La Conquista De Aegon</titulo>
+			<contenido url="Cap1.txt"/>
+ 		</capitulo>
+		<capitulo num_pag="35">
+ 			<titulo>El Reinado del Dragón</titulo>
+			<contenido url="Cap2.txt"/>
+ 		</capitulo>
+		<indice>
+			1.La Conquista De Aegon
+			2.El Reinado del Dragón.
+			3.Las Tres Cabezas Del Dragon
+		</indice>
+ 		<sinopsis> 
+			Siglos antes de que tuvieran lugar los acontecimientos que se relatan en «Canción de hielo y fuego», 
+			la casa Targaryen, la única dinastía de señores dragón que sobrevivió a la Maldición de Valyria, 
+			se asentó en la isla de Rocadragón
+		</sinopsis>
+ 	</libros>
+
+	<revistas id="R015" tipo_clase="informatica">
+ 		<titulo>Mi Primera Web</titulo>
+ 		<num_revista>128</num_revista>
+ 		<indice>
+			1.Etiquetas
+			2.HTLM
+			3.CSS
+		</indice>
+ 		<seccion num_pag="12">
+ 			<contenido url="Etiquetas.txt"/>
+ 		</seccion>
+ 	</revistas>
+ 	
+	<periodicos id="P157" tipo_clase="nacionales" fecha_publicacion="21/01/2019">
+ 		<seccion tipo_seccion="deportes">
+ 			<articulo autor="Michael Robison">
+				Mucho se discute, en España y fuera, sobre si el Barcelona de Pep Guardiola es el mejor 
+				equipo de fútbol de todos los tiempos. Por más entretenido que nos resulte, es un debate 
+				imposible de resolver. Es incluso estéril. Existen demasiadas variantes y nos falta información.
+			</articulo>
+ 		</seccion>
+ 		<indice>
+			1. ¿Habra Triplete?
+			2. Detras del VAR
+			3. El Barcelona de Pep
+		</indice>
+		<contenido url="MRP157.txt"/>	
+ 	</periodicos>
+</biblioteca>

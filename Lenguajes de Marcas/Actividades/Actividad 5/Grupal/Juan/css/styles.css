@@ -1,0 +1,490 @@
+/*Reset para inicializar las propiedades en las etiquetas*/
+	@charset "UTF-8";
+	html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+	article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+	table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+
+	fieldset, img, abbr, acronym { border: 0; }
+
+	address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+
+	ol, ul { list-style: none; }
+
+	caption, th { text-align: left; }
+
+	h1, h2, h3, h4, h5, h6 { font-family: serif; font-size: 1rem; font-size: 100%; font-weight: normal; }
+
+	a { outline: none; }
+
+	* {
+		box-sizing: border-box;
+	}
+
+/*Estilos generales*/
+	html {
+		font-size:14px;
+	}
+
+	body {
+		/* border:1px solid red; */
+		font-family: 'Montserrat', sans-serif;
+		font-size:1rem;
+		min-height: 100vh;
+		padding-top: 100px;
+		position: relative;
+	}
+
+	body:before {
+		content: "";
+		display: blocK;
+		position: fixed;
+		top:0;
+		z-index: 1;
+		background: #A797FF;
+		animation-duration: .5s;
+		animation-name: preload;
+		animation-timing-function: ease-in-out;
+	}
+
+	@keyframes preload {
+		0% {
+			opacity:1;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		90% {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		100% {
+			opacity: 0;
+			height: 0;
+		}
+	}
+
+	h1,h2,h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color:#380E8F;
+	}
+
+	h1,h2 {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-bottom:1rem;
+	}
+
+	h1 {
+		font-size: 2.8rem;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		margin-bottom: .7rem;
+	}
+
+	p {
+		line-height: 1.6em;
+		margin-bottom: 1.5rem;
+	}
+
+	address, input, select, textarea {
+		font-family: inherit;
+	}
+
+	a {
+		transition: all .5s ease-in-out;
+		color:#380E8F;
+	}
+
+	a:hover {
+		color:#7E3E99;
+	}
+
+/*Grid - Estructura*/
+	.grid {
+		/* border:1px solid red; */
+		display:grid;
+		justify-content: center;
+		grid-gap: 3rem 3rem;
+
+		/* overflow: hidden; */
+	}
+
+	.grid.col3 {
+		/* border:1px solid red; */
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.grid.col1 {
+	}
+
+	.grid.col2 {
+		/* border:1px solid red; */
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.grid.col3 .imagen {
+		margin-bottom:1rem;
+	}
+
+	.grid.conAside {
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 40px;
+	}
+
+	.grid.conAside h1 {
+		grid-column: span 2;
+	}
+
+	aside {
+		align-content: start;
+		grid-row-gap: 3rem;
+	}
+
+	.row {
+		justify-self: center;
+		width: 90vw;
+		max-width: 1382px;
+		/* overflow: hidden; */
+		padding: 0 3rem;
+	}
+
+	body > section.grid {
+		padding: 3rem;
+	}
+
+	body > section.grid:nth-of-type(2n) {
+		background-color: #E1E1E1;
+
+	}
+
+/*Imagnes*/
+	.imagen {
+		border-radius:5px;
+		overflow: hidden;
+		display: block;
+		line-height: 0;
+	}
+
+
+	article .imagen {
+		margin-bottom: 1.5rem;
+	}
+
+	.leer .imagen {
+		margin-bottom: 1.5rem;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	/*Botones*/
+	.boton a, .boton input {
+		border-radius:50px;
+		border:2px solid #7E3E99;
+		color:#7E3E99;
+		display:inline-block;
+		font-weight: 600;
+		letter-spacing: 1px;
+		padding:10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all .5s ease-in-out;
+		cursor:pointer;
+	}
+
+	.boton.small a, .boton.small input  {
+		font-size:.8em;
+		padding:5px 10px;
+	}
+
+	.boton a:hover, .boton input:hover {
+		border-color:#380E8F;
+		background-color:#380E8F;
+		color:#ffffff;
+	}
+
+/*Formulario*/
+	label {
+		display:blocK;
+		font-weight: 600;
+		color: #380E8F;
+		margin-bottom:.5rem;
+	}
+
+	label.check {
+		display: inline-block;
+	}
+
+	.box {
+		border:1px solid #D2D2D2;
+		padding:.75rem;
+		font-size: 1rem;
+		width:100%;
+
+	}
+
+	#formContacto {
+		grid-gap: 1.5rem 3rem;
+	}
+
+	#formContacto .condiciones {
+		grid-column: span 2;
+	}
+
+	#formContacto .item:nth-child(1) {
+		/* border:1px solid red; */
+		display: grid;
+		grid-row-gap: 1.5rem;
+	}
+
+	textarea {
+		height: 305px;
+	}
+
+
+
+/*Cabecera y menu*/
+	#cabecera {
+		align-content: center;
+		background: white;
+		box-shadow: 0 0 3px #A797FF;
+		grid-template-columns: auto 1fr;
+		height:100px;
+		padding:0 1.5rem;
+		position: fixed;
+		top:0;
+		width: 100%;
+	}
+
+	#cabecera h1 {
+		/* border:1px solid red; */
+		line-height: 1em;
+		margin-bottom:0;
+		display:none;
+	}
+
+	#logo {
+		/* border:1px solid red; */
+		width: 300px;
+	}
+
+	#menu {
+		/*border:1px solid red;*/
+	}
+
+	#menu ul {
+		/*border:1px solid red;*/
+		display:flex;
+		flex-wrap: nowrap;
+		height: 100%;
+		justify-content: flex-end;
+	}
+
+	#menu ul li {
+		/* border:1px solid red; */
+		align-items: center;
+		display: flex;
+		margin-right:25px;
+	}
+
+	#menu ul li:last-child {
+		margin-right:0;
+	}
+
+
+	#menu a {
+		border-radius:15px;
+		border:2px solid #ffffff;
+		color:#7E3E99;
+		font-weight: 600;
+		letter-spacing: 1px;
+		padding: 0 1.5rem;
+		padding:10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition:all .5s ease-in-out;
+	}
+
+	#menu a:hover {
+		border:2px solid #7E3E99;
+		padding:10px 20px;
+		border-radius:25px;
+
+	}
+
+	#menu a.activo {
+		border:2px solid #380E8F;
+		padding:10px 20px;
+		border-radius:25px;
+		color:#ffffff;
+		background-color: #380E8F
+	}
+
+/*Intro*/
+	#intro {
+		/* border:1px solid red; */
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 50px;
+		justify-self: center;
+	}
+
+	#intro > div {
+		/* border:1px solid red; */
+		display:grid;
+		align-self: center;
+	}
+
+/*Ofertas*/
+	.oferta {
+		background-color:#A797FF;
+		width: 100%;
+		border-radius: 5px;
+		color: #380E8F;
+		font-weight: 600;
+	}
+
+	.oferta .imagen {
+		border-radius: 5px 5px 0 0;
+		border-bottom: 1px solid #7E3E99;
+	}
+
+	.oferta .txt {
+		padding: 1.5rem;
+	}
+
+	.oferta .boton a {
+		border-color: #380E8F;
+		color: #380E8F;
+	}
+
+	.oferta .boton a:hover {
+		color:#ffffff;
+	}
+
+/*Contacto*/
+	#contacto {
+		/* border:1px solid red; */
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 50px;
+		justify-self: center;
+	}
+
+	#contacto > div {
+		/* border:1px solid red; */
+		display:grid;
+		align-self: center;
+	}
+
+	#contactoDatos {
+		font-size: 2.4rem;
+		letter-spacing: 1px;
+		color:#380E8F
+	}
+
+	#contactoDatos i {
+		margin-right: 10px;
+	}
+
+	#contactoDatos li {
+		margin-bottom:1.5rem;
+	}
+
+	#contactoDatos li:last-child {
+		margin-bottom:0;
+	}
+
+/*Fotter*/
+	#footer {
+		/* border:1px solid red; */
+		background-color:#380E8F;
+		color: #A797FF;
+		padding: 3rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#footer a {
+		color:#A797FF;
+
+	}
+
+	#footer a:hover {
+		color:#ffffff;
+	}
+
+	#copyright {
+		font-size: .8em;
+		line-height: 1.6em;
+	}
+
+	#rrss {
+		display:flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+	}
+
+	#rrss li {
+		margin-right:10px;
+	}
+
+	#rrss li:last-child {
+		margin-right: 0;
+	}
+
+	#rrss a {
+		align-items: center;
+		border-radius: 100%;
+		border:1px solid #A797FF;
+		display: flex;
+		height: 32px;
+		justify-content: center;
+		text-decoration: none;
+		width:32px;
+	}
+
+	#rrss a:hover {
+		background-color: #ffffff;
+		border:1px solid #ffffff;
+		color:#380E8F;
+	}
+
+	#rrss a span {
+		display:none;
+	}
+
+/*Hack IE*/
+	/*Muestra un mensaje para utilizar un navegador con soporte, seguro y actualizado*/
+	/*https://keithclark.co.uk/articles/moving-ie-specific-css-into-media-blocks/media-tests/*/
+	@media screen and (min-width:0\0) {
+		body {
+			/* border: 1px solid red; */
+			overflow: hidden;
+		}
+
+		body:after {
+			content:"Navegador no soportado, utiliza Chrome, Firefox, Edge, Opera o un navegador actual y seguro.";
+			background: #A797FF;
+			width: 100vw;
+			height: 100vh;
+			font-size: 2.5rem;
+			font-weight: bold;
+			color: #380E8F;
+			text-transform: uppercase;
+			padding:3rem;
+			opacity: .95;
+			box-sizing: border-box;
+			vertical-align: middle;
+			position: fixed;
+			top:0;
+		}
+	}

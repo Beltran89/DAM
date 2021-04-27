@@ -1,0 +1,87 @@
+@media only screen and (max-width:767px) {
+	#contenedor {
+		min-width:320px;
+		border:20px solid violet;
+	}
+
+	#contenedor::before {
+		content: "Móvil vertical < 768px";
+	}
+
+	nav ul li {
+		display:block;
+	}
+
+	.header{
+		height: auto;
+		text-align: center;
+	}
+
+	.header .logo{
+		/* border:1px solid red; */
+		position: static;
+		margin:1rem auto;
+	}
+
+	.header h1{
+		margin-top:0;
+	}
+
+	.header .telefono{
+		/* border:1px solid red; */
+		position: static;
+		text-align: center;
+		padding-right: 0;
+	}
+
+	form .col  {
+		float:none;
+		width: 100%;
+		display: block;
+	}
+
+	form .col:nth-of-type(1) {
+		margin-right:0;
+	}
+
+	form .col:nth-of-type(2) {
+		margin-left:0;
+	}
+
+	.campo:last-child {
+		margin-bottom: 1rem;
+	}
+
+
+	form .condiciones label, form .condiciones input {
+		float: left;
+	}
+
+	form .condiciones label {
+		width: 90%;
+	}
+
+	form .condiciones label:after {
+		content:"";
+		width: 100%;
+		clear: both;
+	}
+
+
+	section header {
+		height: auto;
+	}
+
+	section.area article {
+		width: 100%;
+		margin-right:0;
+		text-align: center;
+		min-height: auto;
+	}
+
+	section header img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+}

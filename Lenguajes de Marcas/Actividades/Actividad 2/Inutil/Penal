@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+			<title>Abogados Penal</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	</head>
+
+	<body>
+	
+		<div id="contenedor">
+
+			
+
+			<header>
+
+			<!-- Cabecera de la página-->
+				<div> 
+
+					<img class="logo" src="logo2.jpg"> 
+
+				</div>
+
+				<div>
+					<h2 class="desde">Desde 1989</h2>	
+				</div>
+				
+				<div>
+					<h1 class="abogados">Abogados Penal 1 </h1>
+				</div>
+
+
+			</header>
+
+			<nav>
+			<!-- Menú de la página -->
+				<ul>
+
+					<li><a href="index.html">Home</a> </li>
+					<li><a href="quienes.html">Quiénes somos</a> </li>
+					<li><a href="noticias.html">Noticias</a> </li>
+					<li><a href="servicios.html">Servicios</a> </li>
+					<li><a href="contacto.html">Contacto</a> </li>
+				</ul>
+
+			</nav>
+
+			<section>
+			<!-- Contenido principal -->
+			<div>
+				<img id="imgpenal" src="abogado Penal.jpg">
+			
+			<p><br> <br>
+				Si está buscando un abogado penalista en Madrid, nuestros profesionales especialistas en Derecho Penal le ofrecen una respuesta ágil y eficaz en asuntos como juicios, faltas, recursos, alcoholemias y toda clase de delitos. Le podremos ayudar en asunto tales como: <br><br><br>
+
+				<ul id="descripcion">
+				<li>Delitos contra la persona: lesiones, homicidio, asesinato, etc. </li>
+				<li>Malos tratos. </li>	
+				<li>Violencia de Género. </li>	
+				</ul>	
+				
+			</p>
+			</div>
+			
+			</section>
+
+			<aside>
+
+			<!-- información menos relevante de la página -->
+			</aside>
+
+			<footer>
+			<!-- Pie de la página -->
+			</footer>
+
+		</div>
+	
+	</body>
+
+</html>

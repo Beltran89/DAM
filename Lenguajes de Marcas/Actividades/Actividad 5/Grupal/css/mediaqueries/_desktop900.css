@@ -1,0 +1,11 @@
+@media only screen and (max-width:1300px) {
+	#contenedor {
+		width:875px;
+	}
+
+	/*menu*/
+	nav ul li a {
+		font-size: 1rem;
+		padding:10px 5px;
+	}
+}

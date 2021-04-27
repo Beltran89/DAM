@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto | Leguajes de Marca - Actividad 2</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<header id="cabecera" class="grid">
+		<div id="logo">
+			<img src="img/logo.svg" alt="Logotipo de Actividad 2">
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html" title="Página de inicio">Inicio</a></li>
+				<li><a href="portfolio.html" title="Portfolio - Diseño Gráfico y Desarollo web">Portfolio</a></li>
+				<li><a href="servicios.html" title="Servicios - Diseño Gráfico y Desarollo web">Servicios</a></li>
+				<li><a href="sobremi.html" title="Información sobre mi">Sobre mi</a></li>
+				<li><a class="activo" href="contacto.html" title="Página de contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="grid">
+		<article id="contacto" class="grid row">
+			<div class="txt">
+				<h1>Contacto</h1>
+				<p>Mamaar apetecan benemeritaar por la gloria de mi madre te va a hasé pupitaa ese pedazo de. Fistro la caidita ese hombree llevame al sircoo. Hasta luego Lucas diodeno diodeno a wan jarl diodenoo amatomaa diodenoo.</p>
+				<ul id="contactoDatos">
+					<li><i class="fab fa-telegram"></i><span class="contactDetails">+34 777 555 111</span></li>
+					<li><i class="fas fa-at"></i><a href="mailto:hi@condemordev.com">hi@condemordev.com</a></li>
+				</ul>
+				<p></p>
+			</div>
+			<picture class="imagen">
+				<img src="img/contacto.png" alt="Imagen freelance y bapu trabajando">
+			</picture>
+		</article>
+	</section>
+
+	<section class="grid">
+		<div class="row">
+			<h2>Formulario de contacto</h2>
+			<form id="formContacto" action="mailto:hi@condemordev.com" class="grid col2">
+				<div class="item">
+					<div class="select">
+						<label for="sltDpto" title="Selecciona el Departamento">Selecciona el departamento</label>
+						<select id="sltDpto" name="sltDpto" class="box" title="Selecciona el Departamento">
+							<option value="Diseño Gráfico">Diseño Gráfico</option>
+							<option value="Desarrollo Web">Desarrollo Web</option>
+							<option value="Aplicaciones móviles">Aplicaciones Móviles</option>
+						</select>
+					</div>
+					<div>
+						<label for="txtNombre">Nombre<small>* Obligatorio</small></label>
+						<input name="txtNombre" class="box" required="required" type="text" title="Introduce tu nombre" value="" placeholder="Introduce tu nombre" />
+					</div>
+					<div>
+						<label for="txtCorreo">Email <small>* Obligatorio</small></label>
+						<input name="txtCorreo" class="box" required="required" type="email" title="Introduce tu email" value="" placeholder="tu@email.com" />
+					</div>
+					<div>
+						<label for="txtTelefono">Teléfono</label>
+						<input name="txtTelefono" class="box" type="tel" title="Introduce tu teléfono" value="" placeholder="+34 777 555 111" />
+					</div>
+				</div>
+				<div class="item">
+					<label class="label" for="txtConsulta">Consulta</label>
+					<textarea name="txtConsulta" class="box" required="required" cols="70" rows="2" title="Escribe tu consulta" placeholder="Escribe tu consulta"></textarea>
+				</div>
+				<div class="item condiciones">
+					<input type="checkbox" name="chkCondiciones" id="chkCondiciones"><label class="check" for="chkCondiciones">Acepto las conciciones del Formulario</label>
+				</div>
+				<div class="boton small">
+					<input type="submit" name="cmdEnviar" value="Enviar" id="cmdEnviar" title="Haz click para enviar el formulario"/>
+					<input type="reset" name="borrar" value="Borrar" title="Haz click para borrar el formulario" />
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer id="footer" class="grid">
+		<div id="copyright" class="item">
+			<a href="https://institutotecnologico.telefonica.com" title="Ir a Instituto Tecnológico de Telefonica">Instituto Tecnológico Telefónica</a> © Juan Antonio Pavón Carmona<br>
+			1º DAM | Lenguajes de Marcas<br>
+			LENGUAJES DE MARCAS Y SISTEMAS DE GESTIÓN DE INFORMACIÓN
+		</div>
+		<ul id="rrss" class="item">
+			<li><a href="http://linkedin.com" title="Ir a Linkedin"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+			<li><a href="http://twitter.com" title="Ir a Twitter"><i class="fab fa-twitter"></i><span>Ir a Twitter</span></a></li>
+			<li><a href="https://github.com" title="Ir a Github"><i class="fab fa-git"></i><span>GitHub</span></a></li>
+		</ul>
+	</footer>
+	<script> </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Actividad 4</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="actividad4.css">
+	</head>
+
+	<body>
+		<form action="procesa.jsp"  method="get">
+			<div id="contenedor">
+				
+				<div id="titulo">
+					<p><b>HOJA DE INSCRIPCION <br> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</b></p>
+
+				</div>
+
+				<div id="datos">
+					<div id="titdatos">
+						Datos personales(*)
+					</div>
+
+					<div class="Ap0">
+					Apellidos:
+					</div>
+
+					<div class="Ap1">
+					<p>Nombre:</p>
+					</div>
+
+					<div class="Ap3">
+					<p>Dni:</p>
+					</div>
+
+					<input type="text" name="Apellidos" class="Ap0" /> 
+					<input type="text" name="Nombre"/>
+					<input type="text" name="Dni"  />
+
+
+					<div>
+					Nacido/a en:
+					</div>
+
+					<div class="Ap5">
+					<p>Provicia</p>
+					</div>
+
+					<div class="Ap3">
+					<p>Fecha Nacimiento: (dd/mm/aaaa)</p>
+					</div>
+
+					<input type="text" name="Lugar" /> 
+
+					<select name="ProviciaNac" class="Prov">
+						<option value="MAD">MADRID</option>
+						<option value="VAL">VALECIA</option>
+						<option value="BAC">BARCELONA</option>
+						<option value="BIL">BILBAO</option>
+						<option value="AST">ASTURIAS</option>
+					</select>
+
+					<input type="text" name="Fecha" class="Ap4" />
+
+					<div>
+					Domicilio (Calle, Plaza, Numero)
+					</div>
+
+					<div class="Ap3">
+					<p>Codigo Postal</p>
+					</div>
+					<input type="text" name="Domicilio" id="Domici" /> 
+					<input type="text" name="CodigoPostal"/>
+
+					<div id="Loc">
+					Localidad:
+					</div>
+
+					<div class="Ap5">
+					<p>Provicia</p>
+					</div>
+
+					<div class="Ap3">
+					<p>Telefono:</p>
+					</div>
+
+					<input type="text" name="Lugar" id="Nac4" /> 
+
+					<select name="Provicia" class="Prov">
+						<option value="MAD">MADRID</option>
+						<option value="VAL">VALECIA</option>
+						<option value="BAC">BARCELONA</option>
+						<option value="BIL">BILBAO</option>
+						<option value="AST">ASTURIAS</option>
+					</select>
+
+					<input type="text" name="TLF" class="Ap4" />
+				</div>
+
+				<div id="requisitos">
+					<div id="titreq">
+						Requisitos de Acceso
+					</div>
+					<ul>
+						<input type="radio" name="AD" value="direc" />Directo</li>
+							<ul>
+								<input type="radio" name="AD" value="LOGSE" />Bachillerato LOGSE. Modalidad <input type="text" name="Modalidad" id="Mod" /> </li><br>
+								<input type="radio" name="AD" value="BaEx" />Bachillerato Experimental</li><br>
+								<input type="radio" name="AD" value="Cou" />COU. Opcion <input type="text" name="COU" id="COU" /></li><br>
+								<input type="radio" name="AD" value="FP2" />FP2</li><br>
+								<input type="radio" name="AD" value="Otros" />Otros (Especifique) <input type="text" name="AcOtros" id="AcOtros" /> </li>
+							</ul>
+						<input type="radio" name="AMP" value="MePr" />Mediante Prueba</li>
+					</ul>
+				</div>
+
+				<div id="solicitud">
+
+					<div id="titsoli">
+						Solicitud
+					</div>
+
+						<p>El/la que suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado superior:</p>
+						<p>Ciclo Formativo : 
+							<select name="FP" id="FP">
+								<option value="DAM">Desarrollo de Aplicaciones Informaticas</option>
+								<option value="DAW">Desarrollo de Aplicaciones WEB</option>
+								<option value="STI">Sistemas de Telecomunicaciones e Informacticos</option>
+								<option value="ASIR">Administracion de Sistemas Informaticos en Red</option>
+							</select>
+						</p>
+						<p>En el caso de no ser admitido/a, solicita la admision por orden de preferencia en los siguientes:</p>
+						<div >
+						<p><b>Ciclos Formativos</b></p>
+						</div>
+
+						<div class="Ap1">
+						<b>Centros</b>
+						</div>
+
+						<div class="Ap3">
+						<p><b>Localidad</b></p>
+						</div>
+
+						<input type="text" name="Apellidos" class="Ap0" /> 
+						<input type="text" name="Nombre"/>
+						<input type="text" name="Dni" />
+						<input type="text" name="Apellidos" class="Ap0" /> 
+						<input type="text" name="Nombre" />
+						<input type="text" name="Dni" />
+						<p>Modalidad de horario especial (Marque):<input type="checkbox" name="Esp" value="S" /> </p>
+
+
+				</div>
+
+				<div id="documentacion">
+					<div id="titdoc">
+						Documentacion Presentada
+					</div>
+
+					<input type="checkbox" name="AMP" value="Fotoc" />Fotocopia Dni
+					<input type="checkbox" name="AMP" value="CerAca" />Certificado Academico <br>
+					<input type="checkbox" name="AMP" value="OtroDoc" />Otros Documentos Academicos (Especifique) : <input type="text" name="DocEsp" /> 
+
+
+				</div>
+
+				<div id="comunicacion">
+					<div id="titcom">
+						Comunicación
+					</div>
+					<p>De acuerdo con el articulo 42.2 de la Ley 30/1992, de 26 de noviembre, de Regimen Jurídico de las Administraciones Publicas y del Procedimiento Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13 de enero, se informa que: </p>
+					<ul>
+						<li>El plazo máximo para resolver la presente solicitud es de 3 meses desde la fecha en que haya tenido entrada en el registro del órgano competente para la tramitación, sin perjuicio de lo previsto en el artículo 42.5 de la misma ley.</li>
+						<li>El efecto que producirá el silencio administrativo si transcurre el plazo sin que se hayan dictado y notificado la resolución correspondiente, es desestimatorio de la solicitud.</li>
+					</ul>
+					<p>  <input type="text" name="Localidad" class="Localidad" />, <input type="text" name="Dia" id="Dia" />  de <input type="text" name="Mes" id="Mes" /> de 
+						<select name="Año">
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+							</select>
+					 </p>
+					 <p>La Persona Solicitante:</p>
+					 <div id="Sello"> Registro de entrada</div>
+					 <p class="Firma">Firma</p>
+
+				</div> 
+				<div id="Info"><p>(*) Los Datos personales contenidos en este impreso podrán ser incluidos en un fichero para su tratamiento por la Conserjeria de Cultura y Educación, en el uso de las funciones propias que tiene atribuidas en el ámbito de sus competencias, pudiendo dirigirse a cualquier órgano de<font color="blue">
+				acceso, rectificación, cancelación y oposició, según lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (BOE núm 298, de 14 de diciembre de 1999)</font></p>
+				</div>
+				<h1 id="H1">DIRECTOR/A O TITULAR DEL CENTRO</h1>
+			</div>
+		</form>
+	</body>
+</html>

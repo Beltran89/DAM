@@ -1,0 +1,53 @@
+
+@media only screen and (max-width:1024px) and (orientation: landscape) {
+	#contenedor {
+		width: 100%;
+		border: 20px solid aqua;
+	}
+
+	#contenedor::before {
+		content: "Tablet Horizontal <= 1024px";
+	}
+
+	nav ul li a{
+		padding:10px 10px;
+		font-size:1.2rem;
+	}
+
+
+/*
+@media only screen and
+
+(min-width:900px) and (max-width:768px) and (max-height: 768px) and
+(min-width:1336px) and (max-width:1024px) and (max-height: 1024px)
+ and (orientation: Landscape){
+
+	#contenedor {
+		border: 20px solid aqua;
+		height: 768px;
+		width: 1024px;
+	}
+
+	nav ul{
+		width: 100%;
+		display: inline-block;
+		margin:0 0 15px 0;
+		padding:0;
+		list-style: none;
+		clear: both;
+		background: grey;
+		text-align: center;
+	}
+		nav ul li{
+		width: 13%;
+		display:inline-block;
+		background-color: grey;
+		text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 80%;
+		padding:10px 5px;
+	}
+
+} */

@@ -1,0 +1,164 @@
+@media print {
+
+	#contenedor{
+		width:100%;
+		background-color:white;
+		padding:0;
+		margin:0;
+		border:0;
+	}
+
+	#contenedor::before {
+		content: "Versión impresión";
+		height: 20px;
+		display: block;
+		border-bottom:2px dashed black;
+		color: black;
+		position:static;
+	}
+
+	header h1, h1, h2, h3, p, ul, a {
+		color:black;
+		text-align: left;
+		background: none;
+	}
+
+	h1, h2, h3 {
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	/*No se imprime*/
+	.header .telefono img, nav, .footer, .boton {
+		display:none;
+	}
+
+	/*Cabecera*/
+		.header {
+			border:0;
+			width:100%;
+			margin:0;
+		}
+
+		.header .logo{
+			position: absolute;
+			top:25px;
+			left:0;
+			width: 50px;
+		}
+
+		.header h1 {
+			padding-left: 60px;
+			margin-bottom: 0;
+		}
+
+		.header .telefono{
+			/* border:1px solid red; */
+			position: static;
+			display: block;
+			width: 100%;
+			text-align: left;
+			padding: 0 0 0 60px;
+		}
+
+
+	/*Cuerpo*/
+		section, section.conAside, section footer, section.area {
+			width: 100%;
+			border:0;
+			float:none;
+			display:block;
+			margin:0;
+			padding:0;
+		}
+
+		section header h1, section footer h1 {
+			text-align: left;
+		}
+
+		section.conAside p {
+			padding:0;
+		}
+
+		section.area article {
+			border:0;
+			float:none;
+			display:block;
+			width: 100%;
+			padding:0;
+			min-height: auto;
+
+		}
+
+		.area article h1 {
+			text-align: left;
+			margin-bottom: 0;
+		}
+
+		aside {
+			float:none;
+			display:block;
+			border:0;
+			height:100px;
+			width: 100%;
+		}
+
+		aside img{
+			display:inline-block;
+			width: 150px;
+		}
+
+		aside:before {
+			content: "Anuncios";
+			display:block;
+			font-size:1.2rem;
+			text-transform: uppercase;
+			border-bottom: 2px dashed black;
+			font-weight: bold;
+		}
+
+		form {
+			padding:0;
+			margin:0;
+		}
+		form .col {
+			float:none;
+			width: 100%;
+			margin:0;
+		}
+
+		form .col:nth-of-type(1) {
+			margin-right:0;
+		}
+
+		form .col:nth-of-type(2) {
+			margin-left:0;
+		}
+
+		.campo:last-child {
+			margin-bottom:1.5rem;
+		}
+
+		.caja {
+			border:1px solid black;
+		}
+
+		form .condiciones {
+			text-align: left;
+		}
+
+		input::placeholder, textarea::placeholder {
+			text-indent: -999999999px;
+		}
+}

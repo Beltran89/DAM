@@ -1,0 +1,41 @@
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca ( libros | revistas | periodicos)+>
+
+<!ELEMENT libros (titulo, (capitulo+), indice, sinopsis)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (titulo,contenido)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!ELEMENT revistas (titulo,num_revista,indice,seccion+)>
+<!ELEMENT num_revista (#PCDATA)>
+<!ELEMENT seccion (contenido | (articulo+))>
+
+<!ELEMENT periodicos ((seccion+), indice, contenido)>
+<!ELEMENT articulo (#PCDATA)>
+
+
+<!ATTLIST libros
+	id ID #REQUIRED
+	tipo_clase ( novela | infantil | didactico) "infantil"
+	num_pag CDATA #REQUIRED>
+
+<!ATTLIST capitulo num_pag CDATA #REQUIRED>
+
+<!ATTLIST contenido url CDATA #IMPLIED>
+
+<!ATTLIST revistas
+	id ID #REQUIRED
+	tipo_clase ( informatica | corazon | coches | investigacion | otras ) "coches">
+	
+<!ATTLIST seccion num_pag CDATA #IMPLIED>
+
+<!ATTLIST periodicos
+	id ID #REQUIRED
+	tipo_clase ( nacionales | internacionales) "nacionales"
+	fecha_publicacion CDATA #REQUIRED >
+
+<!ATTLIST seccion tipo_seccion (economica | opinion | deportes | nacional | internacional) "opinion">
+<!ATTLIST articulo autor CDATA #REQUIRED>
+]>

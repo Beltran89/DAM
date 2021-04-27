@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+			<title></title>
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+		</head>
+
+		<body>
+			<div> 1</div>
+			<div id="dos"> 2</div>
+			<div> 3 </div>
+
+			<table border="2" align="center">
+				<tr>
+					<th> titulo 1 </th>
+					<th> titulo 2</th>
+					<th> titulo 3</th>
+				</tr>	
+				<tr align="center">
+					<td rowspan="2"> 1 </td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td colspan="2">
+						<table border="3" align="center">
+						<tr>
+						<td>6a</td>
+						<td>6b</td>
+						<tr></table>
+					</td>
+	
+				</tr>
+
+
+
+			</table>
+
+			<form>
+				<fieldset>
+					<legend> formu 1 </legend>
+					<p>Nombre  :  <input type="text" name="Nombre" class="Ap0" autofocus required="Complete este campo"/><br></p>
+							Apellidos: <input type="text" name="Apellidos" class="Ap0" required="Complete este campo"/><br>
+							Telefono : <input type="text" name="Telefono" class="Ap0" placeholder="Telefono Chiki"/><br>
+							Correo Electronico : <input type="email" name="correo" class="Ap0" size="40" required="Complete este campo"/><br>
+							Motivo del Contacto : <select name="motivo" class="Prov" >
+								<option value="Info">Informacion</option>
+								<option value="Precio">Precio</option>
+								<option value="Sugerencia">Sugerencias</option>
+								<option value="Otros">Otros</option>
+							</select><br><br>
+				</fieldset>
+				<fieldset id="formu1">
+					<legend> formu 2</legend>
+					<p>Nombre  :  <input type="text" name="Nombre" class="Ap0" autofocus required="Complete este campo"/><br></p>
+							Apellidos: <input type="text" name="Apellidos" class="Ap0" required="Complete este campo"/><br>
+							Telefono : <input type="text" name="Telefono" class="Ap0" placeholder="Telefono Chiki"/><br>
+							Correo Electronico : <input type="email" name="correo" class="Ap0" size="40" required="Complete este campo"/><br>
+							Motivo del Contacto : <select name="motivo" class="Prov" >
+								<option value="Info">Informacion</option>
+								<option value="Precio">Precio</option>
+								<option value="Sugerencia">Sugerencias</option>
+								<option value="Otros">Otros</option>
+							</select><br><br>
+				</fieldset>
+
+
+
+			</form>
+		</body>
+
+	</html>

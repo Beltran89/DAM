@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Contacto</title>
+	<link rel="Stylesheet" type="text/css" href="css/styles.css">
+	<link rel="Stylesheet" type="text/css" href="css/mediaqueries.css">
+</head>
+<body>
+	<div id="contenedor">
+		<header class="header">
+			<div class="logo">
+			<!--cabecera con el logo-->
+			<img src="imagenes/logo.png">
+			</div>
+			<h1> INFORMÁTICO REPARADOR</h1>
+			<div class="telefono">
+				<img src="imagenes/telefono.png"> Teléfono: 915213547
+			</div>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://www.google.com">Noticias</a></li>
+				<li><a href="#">Publicaciones</a></li>
+				<li><a href="#">Localizacion</a></li>
+				<li><a href="quienes.html">Quienes somos</a></li>
+				<li><a href="area.html">A. de actuacion</a></li>
+				<li><a class="active" href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<section class="contacto">
+			<header>
+   				<h1>Contacta con nosotros</h1>
+   				<img src="imagenes/contacta.jpg">
+			</header>
+			<article id ="forma"><center>
+				<form>
+					<div class="col">
+						<div class="campo">
+							<label for="txtNombre">Nombre<small>* Obligatorio</small></label>
+							<input name="txtNombre" class="caja" required="required" type="text" title="Introduce tu nombre" value="" placeholder="Introduce tu nombre" />
+						</div>
+						<div class="campo">
+							<label for="txtCorreo">Email <small>* Obligatorio</small></label>
+							<input name="txtCorreo" class="caja" required="required" type="email" title="Introduce tu email" value="" placeholder="tu@email.com" />
+						</div>
+						<div class="campo">
+							<label for="txtTelefono">Teléfono</label>
+							<input name="txtTelefono" class="caja" type="tel" title="Introduce tu teléfono" value="" placeholder="+34 777 555 111" />
+						</div>
+					</div>
+					<div class="col">
+						<label class="label" for="txtConsulta">Consulta</label>
+						<textarea name="txtConsulta" class="caja" required="required" cols="70" rows="2" title="Escribe tu consulta" placeholder="Escribe tu consulta"></textarea>
+					</div>
+					<div class="condiciones">
+						<input type="checkbox" name="chkCondiciones" id="chkCondiciones"><label class="check" for="chkCondiciones">Acepto las conciciones del Formulario</label>
+					</div>
+					<div class="boton small">
+						<input type="submit" name="cmdEnviar" value="Enviar" id="cmdEnviar" title="Haz click para enviar el formulario"/>
+						<input type="reset" name="borrar" value="Borrar" title="Haz click para borrar el formulario" />
+					</div>
+				</form>
+			</center>
+			</article>
+		</section>
+		<footer class="footer">
+			<div class="derechos">
+				Todos los derechos reservados &#169;
+			</div>
+			<ul class="rrss">
+				<li><a href="https://www.google.com"><img src="logos/instagram.svg"></a></li>
+				<li><a href="https://www.google.com"><img src="logos/facebook.svg"></a></li>
+				<li><a href="https://www.google.com"><img src="logos/twitter.svg"></a></li>
+			</ul>
+		</footer>
+	</div>
+
+</body>
+</html>

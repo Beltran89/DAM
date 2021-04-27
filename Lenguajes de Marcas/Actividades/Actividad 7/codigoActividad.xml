@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"> 
+<xsl:output method="html"/>
+<xsl:template match="/"> 
+
+<!--La siguiente hoja de estilo XSL se debe cambiar un poco 
+para conseguir los siguientes requisitos: 
+ 
+A) El primer nombre del cliente se debe imprimir en 
+color rojo.
+B) En la tercera entrada 'Auftrag' no debe imprimirse 
+el nombre sino “###Este es el 3rd 'pedido'###”. 
+C) Todas las entradas 'PC' se presentarán en negrita. 
+ 
+D) Utilizar el color amarillo para todos los conjuntos 
+de datos más allá de "proveedor" si el precio 
+determinado dentro del elemento "precio" es 2000 o 
+inferior. 
+ 
+E) Usar el color verde para todas las órdenes de 
+cliente 'Reich'. 
+ 
+F) Configurar el nombre del proveedor en cursiva si se 
+pueden ordenar más de dos productos en ese lugar.// 
+--> 
+
+  
+<html lang="en" dir="ltr"> 
+
+	<head> 
+		<meta charset="utf-8"/>
+		<title>Actividad 7</title>
+		<link rel="stylesheet" href="estilos/estilos.css"/> 
+
+	</head> 
+
+
+	<body> 
+		
+		<h2>Clientes</h2> 
+	
+		<table border="1">
+			<tr>
+				<th> Cliente</th>
+				<th> PC </th>
+			</tr>
+
+			<tr id="Arm">
+				<td id="cliente"><xsl:value-of select= "/tablas/Orden/dataset[1]/Cliente"/></td>
+				<td id="cliente"><strong><xsl:value-of select = "/tablas/Orden/dataset[1]/PC/text()"/></strong></td>
+			</tr>
+
+			<tr id="Meier">
+				<td id="cliente"><xsl:value-of select= "/tablas/Orden/dataset[2]/Cliente"/></td>
+				<td id="cliente"><strong><xsl:value-of select = "/tablas/Orden/dataset[2]/PC/text()"/></strong></td>
+			</tr>
+
+			<tr id="Reich">
+				<td>###Este es el 3er pedido ###</td>
+				<td id="cliente"><strong><xsl:value-of select = "/tablas/Orden/dataset[3]/PC/text()"/></strong></td>
+			</tr>
+		</table>
+
+		<h2> Precio Menor 2000 </h2>
+		<table border="1">
+			<tr>
+				<th> Proveedor </th>
+				<th> Parte</th>
+				<th> Precio </th>
+				<th> Entrega </th>
+			</tr>
+			<xsl:for-each select="tablas/Devoluciones/dataset[Precio &lt; 2001]">
+			<tr>
+				<td class="amarillo"><xsl:value-of select = "Proveedor"/></td>
+				<td class="amarillo"><xsl:value-of select = "Parte"/></td>
+				<td class="amarillo"><xsl:value-of select = "Precio"/></td>
+				<td class="amarillo"><xsl:value-of select = "Entrega"/></td>
+			</tr>
+			</xsl:for-each>
+		</table>
+
+
+		<h2> Busqueda de Resultado Igual  </h2>
+		<table border="1">
+			<tr>
+				<th> Clientes </th>
+				<th> PC </th>
+			</tr>
+
+			<xsl:for-each select="//Orden/dataset [Cliente = 'Cesar']">
+			<tr>
+				<td class="green"><xsl:value-of select = "Cliente"/></td>
+				<td class="green"><xsl:value-of select = "PC"/></td>
+			</tr>
+			</xsl:for-each>
+
+		</table>
+		<h2> Tabla ordenada </h2>
+		<table border="1">
+			<tr>
+				<th> Proveedor </th>
+				<th> Parte</th>
+				<th> Precio </th>
+				<th> Entrega </th>
+			</tr>
+			<xsl:for-each select="tablas/Devoluciones/dataset">
+			<xsl:sort select="Proveedor"/>
+			<tr>
+				<td ><xsl:value-of select = "Proveedor"/></td>
+				<td ><xsl:value-of select = "Parte"/></td>
+				<td ><xsl:value-of select = "Precio"/></td>
+				<td ><xsl:value-of select = "Entrega"/></td>
+			</tr>
+			</xsl:for-each>
+		</table>
+
+	
+	</body> 
+
+</html> 
+</xsl:template>
+</xsl:stylesheet>
+
+

@@ -1,0 +1,62 @@
+
+
+@media only screen and (min-width:900px) and (max-width:1300px) {
+	#contenedor {
+		width:900px;
+		border:20px solid chartreuse;
+	}
+
+	#contenedor::before {
+		content: "Escritorio fijo > 900px < 1300px";
+	}
+
+	nav ul li a {
+		font-size: 1rem;
+		padding:10px 5px;
+	}
+}
+
+
+/*Cristian
+@media only screen and (min-width:768px) and (max-width:900px) {
+	#contenedor {
+		width:768px;
+		border:20px solid chartreuse;
+	}
+
+*/
+
+
+/* Miguel
+@media only screen and (min-width:900px) and (max-width:1300px) {
+	#contenedor {
+		width:900px;
+		border:20px solid chartreuse;
+
+	}
+
+
+	nav ul{
+		width: 100%;
+		display: inline-block;
+		margin:0 0 15px 0;
+		padding:0;
+		list-style: none;
+		clear: both;
+		background: grey;
+		text-align: center;
+	}
+		nav ul li{
+		width: 13%;
+		display:inline-block;
+		background-color: grey;
+		text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 80%;
+		padding:10px 5px;
+	}
+
+}
+*/
